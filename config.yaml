@@ -1,11 +1,33 @@
 teams:
-- name: staff
-  maintainers:
-  - ryjones
-  members:
-  - thelinuxfoundation
+  - name: caliper-admins
+    maintainers:
+      - ryjones
+    members:
+      - aklenik
+      - davidkel
+  - name: caliper-committers
+    maintainers:
+      - ryjones
+    members:
+      - aklenik
+      - davidkel
+  - name: staff
+    maintainers:
+      - ryjones
+    members:
+      - thelinuxfoundation
 repositories:
-- name: governance
-  teams:
-    staff: maintain
-  visibility: public
+  - name: governance
+    teams:
+      staff: maintain
+    visibility: public
+    #  - name: caliper
+    #    teams:
+    #      caliper-admins: admin
+    #      caliper-committers: maintain
+    #    visibility: public
+  - name: caliper-benchmarks
+    teams:
+      caliper-admins: admin
+      caliper-committers: maintain
+    visibility: public
